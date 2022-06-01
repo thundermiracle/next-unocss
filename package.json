@@ -5,35 +5,10 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "dev": "run-p dev:*",
-    "dev:next": "next dev",
-    "dev:css": "unocss src/**/*.tsx --out-file=src/styles/uno.css --watch",
-    "build": "pnpm css && next build",
-    "start": "next start",
-    "lint": "next lint",
-    "css": "unocss src/**/*.tsx --out-file=src/styles/uno.css"
-  },
-  "dependencies": {
-    "@unocss/reset": "^0.37.0",
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "dev:cli": "pnpm --filter next-unocss-cli dev",
+    "dev:webpack": "pnpm --filter next-unocss-webpack dev"
   },
   "devDependencies": {
-    "@types/node": "17.0.36",
-    "@types/react": "18.0.9",
-    "@types/react-dom": "18.0.5",
-    "@unocss/cli": "^0.37.0",
-    "@unocss/preset-attributify": "^0.37.0",
-    "@unocss/preset-uno": "^0.37.0",
-    "@unocss/preset-web-fonts": "^0.37.0",
-    "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6",
-    "npm-run-all": "^4.1.5",
-    "typescript": "4.7.2",
-    "unocss": "^0.37.0"
-  },
-  "engines": {
-    "node": ">=14.19.0"
+    "npm-run-all": "^4.1.5"
   }
 }
