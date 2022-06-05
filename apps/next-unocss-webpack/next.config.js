@@ -9,6 +9,9 @@ const nextConfig = {
   },
   webpack: (config, { dev }) => {
     config.plugins.push(UnoCSS());
+    if (dev) {
+      config.cache = false;
+    }
 
     return config;
   },
