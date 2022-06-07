@@ -2,6 +2,12 @@
 
 Next.js with unocss.
 
+## Performance in LightHouse
+
+[https://next-unocss.vercel.app](https://next-unocss.vercel.app)
+
+![performance](./docs/performance.png)
+
 ## Installation
 
 ```shell
