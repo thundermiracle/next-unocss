@@ -7,11 +7,11 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:next": "next dev",
-    "dev:css": "unocss src/**/*.tsx --out-file=src/styles/uno.css --watch",
+    "dev:css": "unocss 'src/**/*.tsx' --out-file=src/styles/uno.css --watch",
     "build": "pnpm css && next build",
     "start": "next start",
     "lint": "next lint",
-    "css": "unocss src/**/*.tsx --out-file=src/styles/uno.css"
+    "css": "unocss 'src/**/*.tsx' --out-file=src/styles/uno.css"
   },
   "dependencies": {
     "@unocss/reset": "^0.37.0",
